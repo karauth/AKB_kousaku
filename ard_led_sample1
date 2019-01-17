@@ -1,0 +1,14 @@
+// led_blink_sample1
+
+const int led_pin = 13;           // LED connected to digital pin 13
+
+void setup() {
+  pinMode( led_pin, OUTPUT );     // sets the digital pin as output
+}
+
+void loop() {
+  digitalWrite( led_pin, HIGH );  // sets the LED off
+  delay( 1000 );                  // waits for a second
+  digitalWrite( led_pin, LOW );   // sets the LED on
+  delay( 1000 );                  // waits for a second
+}
